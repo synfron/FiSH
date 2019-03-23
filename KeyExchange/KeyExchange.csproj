@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>FooIRC.Cryptography.KeyExchange</AssemblyName>
+    <RootNamespace>FooIRC.Cryptography.KeyExchange</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Security.Cryptography.Csp" Version="4.3.0" />
+  </ItemGroup>
+
+</Project>

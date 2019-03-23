@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.6</TargetFramework>
+    <AssemblyName>FooIRC.Cryptography.FiSH</AssemblyName>
+    <RootNamespace>FooIRC.Cryptography.FiSH</RootNamespace>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Description></Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Synfron</Authors>
+    <Company>Synfron</Company>
+    <Product>FooIRC</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Blowfish\Blowfish.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <_PackageFiles Include="$(OutputPath)\Blowfish.dll">
+      <BuildAction>None</BuildAction>
+      <PackagePath>lib\netstandard1.3\</PackagePath>
+    </_PackageFiles>
+  </ItemGroup>
+</Project>
